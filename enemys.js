@@ -1,10 +1,10 @@
 class Enemys {
-    constructor(name) {
-        this.name = ["Goblin"];
-        this.speed = [2];
-        this.attackk = [5];
-        this.health = [100];
-        this.defend = [2];
+    constructor(name, speed, attackk, health, defend) {
+        this.name = name;
+        this.speed = speed;
+        this.attackk = attackk;
+        this.health = health;
+        this.defend = defend;
     }
 
     attack() {
@@ -16,7 +16,7 @@ class Enemys {
     }
 
     dash() {
-        console.log(`enemy dash, speed = 5`);
+        console.log(`enemy dash, speed = ${this.attackk}`);
     }
 
     getInformation() {
@@ -24,7 +24,7 @@ class Enemys {
     }
 }
 
-const enemy = new Enemys("Goblin");
+const enemy = new Enemys("drian", "2", "5", "100", "2");
 enemy.attack();
 enemy.walk();
 enemy.dash();
