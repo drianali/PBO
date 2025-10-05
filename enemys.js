@@ -8,15 +8,15 @@ class Enemys {
     }
 
     attack() {
-        console.log(`enemy attack!, attack = ${this.attackk}`);
+        console.log(`drian attack, attack = ${this.attackk}`);
     }
 
     walk() {
-        console.log(`enemy walk, speed = ${this.speed}`);
+        console.log(`drian walk, speed = ${this.speed}`);
     }
 
     dash() {
-        console.log(`enemy dash, speed = ${this.attackk}`);
+        console.log(`drian dash, speed = ${this.attackk}`);
     }
 
     getInformation() {
